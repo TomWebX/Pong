@@ -1,43 +1,42 @@
 # PONG // 1982
 
-Ein klassisches Pong-Spiel im 80er-Jahre-Retro-Look: klare Pixelgrafik, ein
-leuchtendes Arcade-Display und das zeitlose Duell aus zwei Schlägern und einem
-Ball.
+Ein geplantes, browserbasiertes Pong-Spiel im 80er-Jahre-Pixel-Art-Stil. Du
+spielst allein gegen eine CPU, weichst im Weltraum den Grenzen des Spielfelds
+aus und versuchst, zuerst sieben Punkte zu erreichen.
 
-> **Status:** Projektstart – das Spiel ist noch in Entwicklung.
+> **Status:** Konzeptphase – das Spiel ist noch nicht implementiert.
 
-## Spielidee
+## Konzept
 
-Zwei Spieler treten auf einem dunklen Spielfeld gegeneinander an. Bewege deinen
-Schläger, lenke den Ball zurück und verhindere, dass er hinter dir ins Aus
-fliegt. Wer zuerst die Zielpunktzahl erreicht, gewinnt.
+- **Stack:** React, TypeScript und HTML Canvas
+- **Modus:** Singleplayer gegen eine CPU
+- **Steuerung:** Touch-first durch Ziehen auf der linken Spielfeldhälfte,
+  zusätzlich per Tastatur (`W`/`S` oder `↑`/`↓`)
+- **Schwierigkeit:** Balltempo und CPU-Reaktion steigen im Verlauf eines
+  Ballwechsels automatisch und bleiben fair begrenzt
+- **Runden:** Match bis 7 Punkte
+- **Darstellung:** Neon-Pixel-Art mit Weltraumhintergrund; Hoch- und Querformat
+  werden unterstützt
+
+Das vollständige Spielkonzept und die technischen Leitlinien stehen in
+[docs/CONCEPT.md](./docs/CONCEPT.md). Die Umsetzung ist in Arbeitspakete
+aufgeteilt:
+
+1. [React-/TypeScript-Grundlage mit Vite](https://github.com/TomWebX/Pong/issues/1)
+2. [Canvas-Game-Loop, Physik und Punktestand](https://github.com/TomWebX/Pong/issues/2)
+3. [CPU-Gegner und Difficulty-Progression](https://github.com/TomWebX/Pong/issues/3)
+4. [Touch- und Tastatursteuerung](https://github.com/TomWebX/Pong/issues/4)
+5. [Retro-UI, Spielzustände und Barrierefreiheit](https://github.com/TomWebX/Pong/issues/5)
 
 ## Geplante Features
 
-- Lokaler Zwei-Spieler-Modus an einer Tastatur
-- Klassisches Pong-Gameplay mit steigendem Balltempo
-- Punktestand und Anzeige des Gewinners
-- Pixel-Art-Oberfläche im Stil einer 80er-Jahre-Spielhalle
-- Dunkler Bildschirm mit Neon-Akzenten und Arcade-Atmosphäre
-
-## Steuerung
-
-| Aktion | Spieler 1 | Spieler 2 |
-| --- | --- | --- |
-| Nach oben | `W` | `↑` |
-| Nach unten | `S` | `↓` |
-| Spiel starten / pausieren | `Leertaste` | `Leertaste` |
-
-Die Steuerung ist für das geplante Spiel vorgesehen und kann sich während der
-Entwicklung noch ändern.
+- Responsive Canvas-Spiel mit pixelgenauer Darstellung
+- Spieler-Schläger auf der linken, CPU-Schläger auf der rechten Seite
+- Punktestand, Start-, Pause- und Ergebniszustand
+- Automatische, gedeckelte Difficulty-Progression
+- Tastatur- und Touch-Steuerung
 
 ## Starten
 
-Ein Startbefehl ist noch nicht verfügbar. Sobald das Spiel und seine
-Startanleitung eingerichtet sind, werden die Schritte hier ergänzt.
-
-## Stil
-
-Die Gestaltung orientiert sich an klassischen Arcade-Automaten: pixelige
-Formen, hoher Kontrast, leuchtende Farben und eine bewusst reduzierte
-Spieloberfläche. Das Gameplay bleibt im Mittelpunkt – ganz wie beim Original.
+Das Projekt enthält noch keine Anwendung oder Startskripte. Setup- und
+Startanweisungen werden ergänzt, sobald die Implementierung beginnt.
