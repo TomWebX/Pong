@@ -24,6 +24,26 @@ aktualisiert den Spielzustand und zeichnet das Canvas; React erhält nur
 Zustandswechsel wie Start, Pause, Punkt und Matchende. So bleibt die Animation
 flüssig, ohne den React-Renderzyklus mit jedem Frame auszulösen.
 
+### Hosting und Deployment
+
+- **Hosting:** GitHub Pages veröffentlicht die statisch gebaute Anwendung
+  direkt aus dem Repository; ein eigener Webserver und ein Backend sind nicht
+  erforderlich.
+- **Build:** Vite erzeugt mit `npm run build` das deploybare Artefakt im
+  Verzeichnis `dist/`.
+- **GitHub Actions:** Ein Workflow installiert die per Lockdatei festgelegten
+  Abhängigkeiten, führt Tests und Produktions-Build aus und veröffentlicht das
+  Artefakt über die offizielle GitHub-Pages-Deployment-Umgebung.
+- **Deployment-Regel:** Pull Requests führen Tests und Build als Prüfung aus,
+  veröffentlichen aber nichts. Ein erfolgreicher Push auf `main` deployt die
+  gebaute Version automatisch nach GitHub Pages.
+- **Projektpfad:** Da GitHub Pages das Spiel unter
+  `https://tomwebx.github.io/Pong/` bereitstellt, wird Vites `base` auf
+  `/Pong/` gesetzt. Assets und Navigation müssen unter diesem Repository-Pfad
+  korrekt funktionieren.
+- **Repository-Einstellung:** In den GitHub-Repository-Einstellungen wird
+  GitHub Pages als Quelle „GitHub Actions“ ausgewählt.
+
 ## 3. Spielablauf und Regeln
 
 1. Im Startzustand zeigt das Spiel Titel, kurze Steuerungshinweise und eine
@@ -124,8 +144,9 @@ Bewegungsgeschwindigkeit, sodass sie Fehler machen kann.
 
 ## 9. Vorgeschlagene Umsetzung in Issues
 
-1. **Projektgrundlage:** [Issue #1](https://github.com/TomWebX/Pong/issues/1) –
-   React-/TypeScript-App mit Vite, Testbasis und Canvas-App-Shell aufsetzen.
+1. **Projektgrundlage und Deployment:** [Issue #1](https://github.com/TomWebX/Pong/issues/1) –
+   React-/TypeScript-App mit Vite, Testbasis, Canvas-App-Shell und automatischem
+   GitHub-Pages-Deployment über Actions aufsetzen.
 2. **Spielkern:** [Issue #2](https://github.com/TomWebX/Pong/issues/2) –
    typisiertes Spielmodell, Game Loop, Canvas-Rendering, Kollisionen und
    Punktlogik implementieren.

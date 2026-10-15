@@ -17,12 +17,14 @@ aus und versuchst, zuerst sieben Punkte zu erreichen.
 - **Runden:** Match bis 7 Punkte
 - **Darstellung:** Neon-Pixel-Art mit Weltraumhintergrund; Hoch- und Querformat
   werden unterstützt
+- **Hosting:** GitHub Pages, automatische Veröffentlichung von `main` über
+  GitHub Actions – ohne eigenen Webserver
 
 Das vollständige Spielkonzept und die technischen Leitlinien stehen in
 [docs/CONCEPT.md](./docs/CONCEPT.md). Die Umsetzung ist in Arbeitspakete
 aufgeteilt:
 
-1. [React-/TypeScript-Grundlage mit Vite](https://github.com/TomWebX/Pong/issues/1)
+1. [React-/TypeScript-Grundlage, Vite und Pages-Deployment](https://github.com/TomWebX/Pong/issues/1)
 2. [Canvas-Game-Loop, Physik und Punktestand](https://github.com/TomWebX/Pong/issues/2)
 3. [CPU-Gegner und Difficulty-Progression](https://github.com/TomWebX/Pong/issues/3)
 4. [Touch- und Tastatursteuerung](https://github.com/TomWebX/Pong/issues/4)
@@ -35,6 +37,7 @@ aufgeteilt:
 - Punktestand, Start-, Pause- und Ergebniszustand
 - Automatische, gedeckelte Difficulty-Progression
 - Tastatur- und Touch-Steuerung
+- CI-Build und automatisches Deployment nach GitHub Pages bei Push auf `main`
 
 ## Starten
 
