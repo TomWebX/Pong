@@ -1,10 +1,8 @@
 # PONG // 1982
 
-Ein geplantes, browserbasiertes Pong-Spiel im 80er-Jahre-Pixel-Art-Stil. Du
+Ein browserbasiertes Pong-Spiel im 80er-Jahre-Pixel-Art-Stil. Du
 spielst allein gegen eine CPU, weichst im Weltraum den Grenzen des Spielfelds
 aus und versuchst, zuerst sieben Punkte zu erreichen.
-
-> **Status:** Konzeptphase – das Spiel ist noch nicht implementiert.
 
 ## Konzept
 
@@ -21,8 +19,7 @@ aus und versuchst, zuerst sieben Punkte zu erreichen.
   GitHub Actions – ohne eigenen Webserver
 
 Das vollständige Spielkonzept und die technischen Leitlinien stehen in
-[docs/CONCEPT.md](./docs/CONCEPT.md). Die Umsetzung ist in Arbeitspakete
-aufgeteilt:
+[docs/CONCEPT.md](./docs/CONCEPT.md). Die Implementierung folgt den ursprünglich definierten Arbeitspaketen:
 
 1. [React-/TypeScript-Grundlage, Vite und Pages-Deployment](https://github.com/TomWebX/Pong/issues/1)
 2. [Canvas-Game-Loop, Physik und Punktestand](https://github.com/TomWebX/Pong/issues/2)
@@ -30,7 +27,7 @@ aufgeteilt:
 4. [Touch- und Tastatursteuerung](https://github.com/TomWebX/Pong/issues/4)
 5. [Retro-UI, Spielzustände und Barrierefreiheit](https://github.com/TomWebX/Pong/issues/5)
 
-## Geplante Features
+## Features
 
 - Responsive Canvas-Spiel mit pixelgenauer Darstellung
 - Spieler-Schläger auf der linken, CPU-Schläger auf der rechten Seite
@@ -39,7 +36,27 @@ aufgeteilt:
 - Tastatur- und Touch-Steuerung
 - CI-Build und automatisches Deployment nach GitHub Pages bei Push auf `main`
 
-## Starten
+## Lokal starten
 
-Das Projekt enthält noch keine Anwendung oder Startskripte. Setup- und
-Startanweisungen werden ergänzt, sobald die Implementierung beginnt.
+Voraussetzung ist Node.js 20 oder neuer.
+
+```sh
+npm ci
+npm run dev
+```
+
+Tests und Produktions-Build:
+
+```sh
+npm test
+npm run build
+npm run preview
+```
+
+Der Build liegt in `dist/` und ist für den GitHub-Pages-Pfad `/Pong/`
+konfiguriert. Pull Requests führen Tests und Build aus; Pushes auf `main`
+veröffentlichen den Build automatisch unter
+https://tomwebx.github.io/Pong/.
+
+Für die erste Veröffentlichung muss unter **Settings → Pages → Build and
+deployment → Source** einmalig **GitHub Actions** ausgewählt werden.
