@@ -16,7 +16,7 @@ import {
   togglePause,
 } from "./game";
 
-describe("Pong game rules", () => {
+describe("Star Volley game rules", () => {
   it("reflects a ball from the top and bottom walls", () => {
     const game = startMatch();
     const top = stepGame(

@@ -177,7 +177,7 @@ export function GameCanvas({
       className="game-canvas"
       width={FIELD_WIDTH}
       height={FIELD_HEIGHT}
-      aria-label="Pong-Spielfeld. Dein Schläger ist links in Cyan, der CPU-Schläger rechts in Magenta."
+      aria-label="Spielfeld. Dein Schläger ist links in Cyan, der CPU-Schläger rechts in Magenta."
       role="img"
       tabIndex={0}
       onContextMenu={(event) => event.preventDefault()}

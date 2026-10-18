@@ -1,8 +1,8 @@
-# Spielkonzept: PONG // 1982
+# Spielkonzept: STAR VOLLEY // 1982
 
 ## 1. Überblick
 
-Ein einfaches, direkt im Browser spielbares Singleplayer-Pong. Der Spieler
+Ein einfaches, direkt im Browser spielbares Singleplayer-Arcade-Spiel. Der Spieler
 steuert einen Schläger auf der linken Seite und tritt in einem Weltraum-Setting
 gegen eine CPU auf der rechten Seite an. Die Umsetzung nutzt React,
 TypeScript und ein HTML-Canvas-Spielfeld.
@@ -38,8 +38,8 @@ flüssig, ohne den React-Renderzyklus mit jedem Frame auszulösen.
   veröffentlichen aber nichts. Ein erfolgreicher Push auf `main` deployt die
   gebaute Version automatisch nach GitHub Pages.
 - **Projektpfad:** Da GitHub Pages das Spiel unter
-  `https://tomwebx.github.io/Pong/` bereitstellt, wird Vites `base` auf
-  `/Pong/` gesetzt. Assets und Navigation müssen unter diesem Repository-Pfad
+  `https://tomwebx.github.io/Star-Volley/` bereitstellt, wird Vites `base` auf
+  `/Star-Volley/` gesetzt. Assets und Navigation müssen unter diesem Repository-Pfad
   korrekt funktionieren.
 - **Repository-Einstellung:** In den GitHub-Repository-Einstellungen wird
   GitHub Pages als Quelle „GitHub Actions“ ausgewählt.
@@ -144,19 +144,19 @@ Bewegungsgeschwindigkeit, sodass sie Fehler machen kann.
 
 ## 9. Vorgeschlagene Umsetzung in Issues
 
-1. **Projektgrundlage und Deployment:** [Issue #1](https://github.com/TomWebX/Pong/issues/1) –
+1. **Projektgrundlage und Deployment:** [Issue #1](https://github.com/TomWebX/Star-Volley/issues/1) –
    React-/TypeScript-App mit Vite, Testbasis, Canvas-App-Shell und automatischem
    GitHub-Pages-Deployment über Actions aufsetzen.
-2. **Spielkern:** [Issue #2](https://github.com/TomWebX/Pong/issues/2) –
+2. **Spielkern:** [Issue #2](https://github.com/TomWebX/Star-Volley/issues/2) –
    typisiertes Spielmodell, Game Loop, Canvas-Rendering, Kollisionen und
    Punktlogik implementieren.
-3. **CPU und Difficulty:** [Issue #3](https://github.com/TomWebX/Pong/issues/3) –
+3. **CPU und Difficulty:** [Issue #3](https://github.com/TomWebX/Star-Volley/issues/3) –
    CPU-Gegner sowie gedeckelte Steigerung von Balltempo und CPU-Reaktion pro
    Ballwechsel ergänzen.
-4. **Steuerung und Responsive:** [Issue #4](https://github.com/TomWebX/Pong/issues/4) –
+4. **Steuerung und Responsive:** [Issue #4](https://github.com/TomWebX/Star-Volley/issues/4) –
    Touch-first-Pointer-Steuerung, Tastatur, Hoch-/Querformat und
    HiDPI-Skalierung integrieren.
-5. **Arcade-UX:** [Issue #5](https://github.com/TomWebX/Pong/issues/5) –
+5. **Arcade-UX:** [Issue #5](https://github.com/TomWebX/Star-Volley/issues/5) –
    Start-, Pause-, Punkt- und Ergebniszustände sowie das Space-Pixel-Art-Design
    und zugängliche Statusanzeigen umsetzen.
 

@@ -1,6 +1,6 @@
-# PONG // 1982
+# STAR VOLLEY // 1982
 
-Ein browserbasiertes Pong-Spiel im 80er-Jahre-Pixel-Art-Stil. Du
+Ein browserbasiertes Arcade-Spiel im 80er-Jahre-Pixel-Art-Stil. Du
 spielst allein gegen eine CPU, weichst im Weltraum den Grenzen des Spielfelds
 aus und versuchst, zuerst sieben Punkte zu erreichen.
 
@@ -21,11 +21,11 @@ aus und versuchst, zuerst sieben Punkte zu erreichen.
 Das vollständige Spielkonzept und die technischen Leitlinien stehen in
 [docs/CONCEPT.md](./docs/CONCEPT.md). Die Implementierung folgt den ursprünglich definierten Arbeitspaketen:
 
-1. [React-/TypeScript-Grundlage, Vite und Pages-Deployment](https://github.com/TomWebX/Pong/issues/1)
-2. [Canvas-Game-Loop, Physik und Punktestand](https://github.com/TomWebX/Pong/issues/2)
-3. [CPU-Gegner und Difficulty-Progression](https://github.com/TomWebX/Pong/issues/3)
-4. [Touch- und Tastatursteuerung](https://github.com/TomWebX/Pong/issues/4)
-5. [Retro-UI, Spielzustände und Barrierefreiheit](https://github.com/TomWebX/Pong/issues/5)
+1. [React-/TypeScript-Grundlage, Vite und Pages-Deployment](https://github.com/TomWebX/Star-Volley/issues/1)
+2. [Canvas-Game-Loop, Physik und Punktestand](https://github.com/TomWebX/Star-Volley/issues/2)
+3. [CPU-Gegner und Difficulty-Progression](https://github.com/TomWebX/Star-Volley/issues/3)
+4. [Touch- und Tastatursteuerung](https://github.com/TomWebX/Star-Volley/issues/4)
+5. [Retro-UI, Spielzustände und Barrierefreiheit](https://github.com/TomWebX/Star-Volley/issues/5)
 
 ## Features
 
@@ -53,10 +53,10 @@ npm run build
 npm run preview
 ```
 
-Der Build liegt in `dist/` und ist für den GitHub-Pages-Pfad `/Pong/`
+Der Build liegt in `dist/` und ist für den GitHub-Pages-Pfad `/Star-Volley/`
 konfiguriert. Pull Requests führen Tests und Build aus; Pushes auf `main`
 veröffentlichen den Build automatisch unter
-https://tomwebx.github.io/Pong/.
+https://tomwebx.github.io/Star-Volley/.
 
 Für die erste Veröffentlichung muss unter **Settings → Pages → Build and
 deployment → Source** einmalig **GitHub Actions** ausgewählt werden.

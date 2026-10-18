@@ -39,11 +39,11 @@ function App() {
     <main className="arcade">
       <header className="masthead">
         <p className="eyebrow">INSERT COIN TO BEGIN</p>
-        <h1>PONG <span>// 1982</span></h1>
+        <h1>STAR VOLLEY <span>// 1982</span></h1>
         <p className="tagline">Ein letzter Ballwechsel zwischen den Sternen.</p>
       </header>
 
-      <section className="cabinet" aria-label="Pong-Spiel">
+      <section className="cabinet" aria-label="Star-Volley-Spiel">
         <div className="scoreboard" aria-label="Punktestand">
           <div className="score-side player-side">
             <span className="player-name">YOU</span>
@@ -65,7 +65,7 @@ function App() {
           {showOverlay && (
             <div className="overlay" role="dialog" aria-modal="true" aria-labelledby="overlay-title">
               <p className="overlay-kicker">
-                {game.phase === "complete" ? "MATCH ENDE" : "PONG // 1982"}
+                {game.phase === "complete" ? "MATCH ENDE" : "STAR VOLLEY // 1982"}
               </p>
               <h2 id="overlay-title">{overlayTitle}</h2>
               {game.phase === "complete" ? (
